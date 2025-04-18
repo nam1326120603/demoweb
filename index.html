@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Thiết kế layout</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="nhatrang.jpg" width="962px" height="128px"/></div>
+            <div id="left" style="font-size: 11px;">
+                <ul>
+                    <li><a href="">Trang chủ</a><hr></li>
+                    <li><a href="">Các điểm đến</a><hr></li>
+                    <li><a href="">Ẩm thực</a><hr></li>
+                    <li><a href="">Giao thông</a><hr></li>
+                    <li><a href="">Khách sạn</a><hr></li>
+                    <li><a href="">Liên hệ</a><hr></li>
+                </ul>
+            </div>
+            <div id="content">
+                <table>
+                    <tr>
+                        <th style="width: 20px;"></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><br><h1>Liên hệ</h1></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="border-radius: 15px; border-style: solid; border-color: #3366cc;">
+                            <form action="/submit_form" method="post" onsubmit="return validateForm()">
+                                <table style="width: 600px;">
+                                    <tr>
+                                        <th style="width: 120px;"></th>
+                                        <th style="width: 480px;"></th>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="hoTen">Họ và tên:</label></td>
+                                        <td><input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ tên" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="dienThoai">Điện thoại:</label></td>
+                                        <td><input type="tel" id="dienThoai" name="dienThoai" placeholder="Nhập điện thoại" required></td>
+                                    </tr>    
+                                    <tr>
+                                        <td><label for="email">Email:</label></td>
+                                        <td><input type="email" id="email" name="email" required></td>
+                                        <td>
+                                            <select>
+                                                <option>@gmail.com</option>
+                                                <option>@yahoo.com</option>
+                                                <option>@hotline.com</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Giới tính:</label></td>
+                                        <td><input type="radio" id="nam" name="gioiTinh"><label for="nam">Nam</label></td>
+                                        <td><input type="radio" id="nu" name="gioiTinh"><label for="nu">Nữ</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="noiDung">Nội dung:</label></td>
+                                        <td><textarea id="noiDung" name="noiDung" rows="4" required></textarea><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Nhập lại">&nbsp;
+                                            <input type="submit" value="Chấp nhận">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>    
+                        </td>
+                    </tr>
+                </table>
+                <script src="main.js"></script>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
